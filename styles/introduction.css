@@ -1,0 +1,35 @@
+.introduction {
+    padding: 32px;
+}
+
+.title-intro span {
+    color: var(--secundary-color);
+}
+
+.title-intro {
+    color: var(--main-color);
+}
+
+.text {
+    font-weight:var(--light) ;
+}
+
+.introduction .text:last-child {
+    font-weight: var(--semibold);
+}
+
+.introduction p {
+    padding: 8px 0;
+}
+
+@media screen and (min-width: 768px) {
+    .title-intro {
+        padding: 16px 200px;
+    }
+
+    .introduction p{
+        padding: 8px 64px;
+        text-align: justify;
+        line-height: 24px;
+    }
+}

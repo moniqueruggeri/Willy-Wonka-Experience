@@ -1,0 +1,121 @@
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    z-index: 3;
+    color: white;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.title-card{
+    text-transform: uppercase;
+}
+
+.card .text {
+    text-align: justify;
+    line-height: 24px;
+}
+
+.card-texts {
+    padding: 32px 40px;
+}
+
+.card-img {
+    width:100%;
+    object-fit: cover;
+    box-shadow:  0 4px 20px rgba(0, 0, 0, 0.5); /* Primeira sombra */
+}
+
+.enchanted-garden {
+    background-color: var(--secundary-color);
+    border-radius: 81px;
+}
+
+.enchanted-garden img {
+    border-radius: 0 73px 73px 73px;
+}
+
+.enchanted-garden::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px; /* Ajuste a altura conforme necessário */
+    background-color: var(--main-color); /* Herda a cor de fundo da div pai */
+    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo da div */
+}
+
+.imagination-lab {
+    background-color: var(--main-color);
+}
+
+.imagination-lab img {
+    border-radius: 73px 0 73px 73px;
+}
+
+.imagination-lab::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px; /* Ajuste a altura conforme necessário */
+    background-color: var(--third-color); /* Herda a cor de fundo da div pai */
+    z-index: -2; /* Coloca o pseudo-elemento atrás do conteúdo da div */
+}
+
+.twilight-tunel {
+    background-color: var(--third-color);
+    border-radius: 0 0 100px 100px;
+    margin-bottom: -3px;
+}
+
+.twilight-tunel img {
+    border-radius: 0 73px 73px 73px;
+}
+
+.twilight-tunel::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Ajuste a altura conforme necessário */
+    background-color: var(--fourth-color); /* Herda a cor de fundo da div pai */
+    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo da div */
+}
+
+.captivating-entertainment {
+    background-color: var(--fourth-color);
+    border-radius: 0 0 100px 100px;
+}
+
+.captivating-entertainment img {
+    border-radius: 73px 0 73px 73px;
+}
+
+.captivating-entertainment::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Ajuste a altura conforme necessário */
+    background-color: var(--bg); /* Herda a cor de fundo da div pai */
+    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo da div */
+}
+
+.cards a {
+    margin-top: auto;
+    margin:0  auto 48px  auto ;
+}
+
+@media screen and (min-width: 768px) {
+    .card-texts {
+        padding: 32px 100px;
+    }
+}

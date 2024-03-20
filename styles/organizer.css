@@ -1,0 +1,17 @@
+.organizer {
+    text-align: center;
+}
+
+.organizer-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 16px;
+}
+
+.line {
+    width: 2px; /* Ajuste conforme necessário */
+    height: 71px;
+    background-color:var(--secundary-color);
+    margin: 0 32px; /* Adicione margem para separar as linhas da imagem */
+}

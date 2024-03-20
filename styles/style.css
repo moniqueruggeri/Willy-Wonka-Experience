@@ -1,0 +1,38 @@
+@import url(header.css);
+@import url(banner.css);
+@import url(introduction.css);
+@import url(cards.css);
+@import url(infos.css);
+@import url(faq.css);
+@import url(organizer.css);
+@import url(footer.css);
+
+:root {
+    /* Cores */
+    --main-color: #65126A;
+    --secundary-color: #D2935C;
+    --third-color: #C92A70;
+    --fourth-color: #501D13;
+    --bg: #F0F0F0;
+
+    /* Fonts */
+    --light: 300;
+    --regular: 400;
+    --medium: 500;
+    --semibold: 600;
+    --black: 900;
+
+    --main-font: "Poppins", sans-serif;
+    --title-font: "Irish Grover", system-ui;
+
+    --size-gg: 40px;
+    --size-g: 32px;
+    --size-m: 24px;
+    --size-p: 16px;
+    --size-pp: 12px;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--bg);
+}

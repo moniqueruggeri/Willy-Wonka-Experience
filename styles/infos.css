@@ -1,0 +1,43 @@
+.infos {
+    display: flex;
+    flex-direction: column;
+}
+
+.when-list, .where-list, .how-long-list {
+    display:flex;
+    gap: 24px;
+}
+
+.when-info, .where-info, .how-long-info {
+    font-family: var(--title-font);
+    color: white;
+    border-radius: 0 50px 50px 0;
+    padding: 2px 24px;
+}
+
+.when-info {
+    background-color: var(--main-color);
+}
+
+.when-info::before {
+    content: url(/images/calendar_month.svg);
+    margin-right: 8px;
+}
+
+.where-info {
+    background-color: var(--third-color);
+}
+
+.where-info::before {
+    content: url(/images/location_on.svg);
+    margin-right: 8px;
+}
+
+.how-long-info {
+    background-color: var(--fourth-color);
+}
+
+.how-long-info::before {
+    content: url(/images/hourglass_top.svg);
+    margin-right: 8px;
+}

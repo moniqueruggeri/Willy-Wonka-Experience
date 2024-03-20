@@ -1,0 +1,22 @@
+.header {
+    background-color: var(--main-color);
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botao-menu {
+    margin-left: auto;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+    width: 32px;
+    padding-right: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    .botao-menu {
+        display: none;
+    }
+
+    
+}
